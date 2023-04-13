@@ -23,18 +23,18 @@ end
 #3 devise inférieur a 6000 
 
 def devises_inf(hash)
-    
+    inférieur = hash.select {|nom,prix| prix.to_i < 6000}
+    puts inférieur
 end
 
-larger(hash)
-smaller(hash)
+#4 La devise la plus chère parmi celles dont le cours est inférieur à 6000.
 
+def cher(hash)
+    the_one = hash.select {|nom,prix| prix.to_i < 6000}.max_by {|nom,prix| prix.to_i}
+    puts the_one
+end
 
-
-
-
-
-
-
-
-
+#larger(hash)
+#smaller(hash)
+#devises_inf(hash)
+#cher(hash)

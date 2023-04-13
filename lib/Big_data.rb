@@ -66,12 +66,11 @@ def repartition(handle)
     puts "#{taille_handle} handle qui commencent par une majuscule"
  end  
 
-
 #count(handle)
 #shorter(handle)
 #five_caracters(handle)
 #maj(handle)
-tri(handle)
+#tri(handle)
 #taille(handle)
 #select_epenser(handle)
 
