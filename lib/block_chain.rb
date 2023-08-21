@@ -34,7 +34,7 @@ def cher(hash)
     puts the_one
 end
 
-#larger(hash)
+larger(hash)
 #smaller(hash)
 #devises_inf(hash)
 #cher(hash)

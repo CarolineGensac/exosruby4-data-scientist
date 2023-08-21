@@ -18,7 +18,7 @@ puts "---------------------------------"
 
    #3 Combien y-a-t'il de handle contenant 5 caractères
 def five_caracters(handle)
-    five = handle.count {|element| element.length == 5}
+    five = handle.count {|element| element.length == 6}
     puts "#{five} élément(s) contiennent 5 caractères."
 end
 
@@ -36,8 +36,7 @@ puts "---------------------------------"
 
 #5 Trie la liste de handle par ordre alphabétique.
 def tri(handle)
-    alphabetic = handle.sort
-    print alphabetic
+    puts handle.sort_by(&:downcase)
 end
 
 puts "---------------------------------"
@@ -70,7 +69,7 @@ def repartition(handle)
 #shorter(handle)
 #five_caracters(handle)
 #maj(handle)
-#tri(handle)
+tri(handle)
 #taille(handle)
 #select_epenser(handle)
 
